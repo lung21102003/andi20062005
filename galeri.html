@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <style>
+      h2{
+        color: white;
+      }
+      h4{
+        color: rgb(255, 255, 255);
+      }
+      h5{
+        color:rgb(255, 255, 255);
+      }
+      .navbar-brand {
+        color: rgb(255, 255, 255);
+      }
+      span {
+        color: rgb(255, 0, 0);
+      }
+      h5 {
+        margin-top: 10px;
+      }
+      .nav-link.active{
+        color: white !important;
+      }
+      .nav-link.dropdown-toggle{
+        color: white;
+      }
+      .navbar-toggler {
+        color: white !important;
+      }
+      .gallery-img {
+    width: 100% !important;
+    height: 200px !important;        /* Ukuran seragam (boleh kamu sesuaikan) */
+    object-fit: cover !important;    /* Potong otomatis agar tetap proporsional */
+    border-radius: 8px !important;   /* Opsional: membuat sudut halus */
+  }
+      /* Khusus baris pertama (gambar ke-1 sampai ke-4) */
+.row.g-2 > div:nth-child(-n+4) > img.gallery-img {
+  height: 350px !important; /* Misalnya lebih tinggi dari yang default (200px) */
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-brand">
+          <i>
+            <b>Andy <span>Rangga</span></b></i>
+          </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index-home.html">Home</a>
+                </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profil
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="TentangSaya.html">About Me</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Project.html">Project</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="contact.html">Kontak</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="sertifikat.html">Sertifikat</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="galeri.html">Galeri</a>
+                </li>
+                </ul>
+                
+        </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pb-3">
+    <div class="row g-2">
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="adef7aefbf8ed1acf8c56f5876cbee80.jpg" class="img-fluid gallery-img" alt="img1">
+  </div>
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="f1ca1f1446b59f9f4c28dc61d4d26575.jpg" class="img-fluid gallery-img" alt="img2">
+  </div>
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="d23bd50b67b4373f84d79137fd026238.jpg" class="img-fluid gallery-img" alt="img3">
+  </div>
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="Gambar WhatsApp 2025-05-25 pukul 21.01.38_566264cd.jpg" class="img-fluid gallery-img" alt="img4">
+  </div>
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="pexels-biswash-lamichhane-2148841765-30301130.jpg" class="img-fluid gallery-img" alt="img5">
+  </div>
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="67247c6690c58caa05598c2da532b7df.jpg" class="img-fluid gallery-img" alt="img6">
+  </div>
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="cc096929f27b38880b5ae350e18514df.jpg" class="img-fluid gallery-img" alt="img7">
+  </div>
+  <div class="col-6 col-sm-4 col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+    <img src="e5dc800c63980bb3eb180349192373b7.jpg" class="img-fluid gallery-img" alt="img8">
+  </div>
+</div>
+
+  </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
